@@ -1,0 +1,29 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: local
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 15MB
+
+server:
+  port: 10010
+  servlet:
+    context-path: /aop
+
+rabbitmq:
+  host: 127.0.0.1
+  port: 5672
+  username: guest
+  password: guest
+  ###开启消息确认机制 confirms
+  virtual-host: /
+  publisher-confirms: true
+  publisher-returns: true
+  #采用手动应答
+  listener:
+    simple:
+      acknowledge-mode: manual
+
