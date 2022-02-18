@@ -3,3 +3,15 @@ spring:
     password: admin123
     url: jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
     username: root
+  redis:
+    database: 0
+    host: 121.199.172.21
+    password: 123456yyy
+    port: 6378
+    timeout: 60s
+    jedis:
+      pool:
+        max-active: 32
+        max-idle: 4
+        max-wait: 3000
+        min-idle: 0
