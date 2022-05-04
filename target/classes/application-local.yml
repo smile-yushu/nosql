@@ -5,8 +5,8 @@ spring:
     username: root
   redis:
     database: 0
-    host: 121.199.172.21
-    password: 123456yyy
+    host: 192.168.172.21
+    password: 123456
     port: 6378
     timeout: 60s
     jedis:
